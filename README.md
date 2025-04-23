@@ -31,6 +31,6 @@ conda env create -f environment.yaml
    ```bash
    conda activate rag
    python main.py
-
+**Note** – Add your groq API key in line 33 of "multi_agentic_chatbot.py"
 
 
