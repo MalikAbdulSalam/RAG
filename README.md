@@ -31,3 +31,6 @@ conda env create -f environment.yaml
    ```bash
    conda activate rag
    python main.py
+
+
+
