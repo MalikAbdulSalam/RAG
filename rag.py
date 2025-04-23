@@ -31,7 +31,7 @@ class ChatGroq:
         response = requests.post("https://api.groq.com/openai/v1/chat/completions", json=payload, headers=headers)
         return AIMessage(content=response.json()["choices"][0]["message"]["content"])
 
-groq_api_key = os.environ.get("GROQ_API_KEY", "add yout GROQ Api key here")
+groq_api_key = os.environ.get("GROQ_API_KEY", "add your GROQ Api key here")
 llm = ChatGroq(groq_api_key=groq_api_key)
 
 # ------------------ LangGraph State Class ------------------
